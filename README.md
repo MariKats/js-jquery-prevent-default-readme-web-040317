@@ -25,7 +25,7 @@ Let's say we have the following form with a div below it:
 </div>
 ```
 
-And the following `submit` event that says hello to the user based on the name they entered. The greeting is added to the `div` with the ID `hello`. 
+And the following `submit` event that says hello to the user based on the name they entered. The greeting is added to the `div` with the ID `hello`.
 
 ```js
 $('form').on('submit', function(event){
@@ -48,7 +48,7 @@ $('form').on('submit', function(event){
 });
 ```
 
-In the above code, we had to pass an `event` to the anonymous function. This `event` is the jQuery event object. Every time an event is bound to an element, this jQuery event object is created to represent that event. 
+In the above code, we had to pass an `event` to the anonymous function. This `event` is the jQuery event object. Every time an event is bound to an element, this jQuery event object is created to represent that event.
 
 In `js/script.js` go ahead and comment out all the code except for the code directly below the comment `//examine event object`. That code should have `debugger`. Refresh `index.html` in the browser and fire your click event. When you're dropped in the debugger console, go ahead and take a look at `event`.
 
@@ -63,7 +63,7 @@ event
 
 ## Using Prevent Default
 
-Now that we know what `event` represents, let's talk about what we do with that object. We have to pass `event` as an argument to the anonymous callback function. 
+Now that we know what `event` represents, let's talk about what we do with that object. We have to pass `event` as an argument to the anonymous callback function.
 
 ```js
 $('form').on('submit', function(event){
@@ -84,3 +84,5 @@ This stops the event from performing its default behavior. Go into `js/script.js
 + [jQuery Event Object](https://api.jquery.com/category/events/event-object/).
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-prevent-default-readme' title='Prevent Default'>Prevent Default</a> on Learn.co and start learning to code for free.</p>
+
+hello
